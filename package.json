@@ -15,6 +15,9 @@
     "body-parser": "^1.15.2",
     "cookie-parser": "^1.4.3",
     "express": "^4.14.0",
-    "multer": "^1.2.0"
+    "gulp": "^3.9.1",
+    "gulp-util": "^3.0.7",
+    "multer": "^1.2.0",
+    "through2": "^2.0.1"
   }
 }
