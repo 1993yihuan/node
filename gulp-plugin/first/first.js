@@ -9,7 +9,6 @@ function prefixStream(prefixText) {
   stream.write(prefixText);
   return stream;
 }
-
 // 插件级别函数 (处理文件)
 function gulpPrefixer(prefixText) {
   if (!prefixText) {
@@ -30,6 +29,7 @@ function gulpPrefixer(prefixText) {
       var streamer = prefixStream(prefixText);
       // 从 streamer 中捕获错误，并发出一个 gulp的错误
       streamer.on('error', this.emit.bind(this, 'error'));
+      console.log(file.path);
       // 开始转换
       file.contents = file.contents.pipe(streamer);
     }
