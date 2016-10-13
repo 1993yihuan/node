@@ -1,3 +1,7 @@
+/**
+ * 增加头文件
+ */
+
 var through = require('through2');
 var gutil = require('gulp-util');
 var PluginError = gutil.PluginError;
